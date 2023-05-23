@@ -1,0 +1,38 @@
+<div class="container">
+    <div id="row1" class="row">
+        <div class="col">
+            <span>Pokemones: Tipo Bug</span>
+        </div>
+    </div>
+    <div id="row2" class="row">
+        <div class="col">
+            <table class="table table-hover table-light">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                        <th>Estadísticas</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of pokemonesBug">
+                        <td>{{p.id}}</td>
+                        <td>{{p.name}}</td>
+                        <td>{{p.types[0].type.name}}</td>
+                        <td>{{p.weight}} Kg</td>
+                        <td>{{p.height/10}} m</td>
+                        <td>HP: {{p.stats[0].base_stat}}<br>
+                            Attack: {{p.stats[2].base_stat}}<br>
+                            Defense: {{p.stats[3].base_stat}}<br>
+                            Speed: {{p.stats[4].base_stat}}</td>
+                        <td><img src="{{p.sprites.other.home.front_default}}" alt="img" width="100"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

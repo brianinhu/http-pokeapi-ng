@@ -1,0 +1,28 @@
+#row1 .col {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #F8F9FA;
+}
+
+#row2 .col {
+    padding: 0 0;
+}
+
+table {
+    text-align: center;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+table tbody tr {
+    cursor: pointer;
+}
+
+table tbody tr:hover {
+    font-weight: 600;
+    transition: font-weight 0s ease-out;
+}
